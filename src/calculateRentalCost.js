@@ -2,7 +2,8 @@
  * @param {number} days
  *
  * @return {number}
- */
+ *
+ **/
 function calculateRentalCost(days) {
   const rentCost = 40;
 
