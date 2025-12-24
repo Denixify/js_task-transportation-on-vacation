@@ -5,12 +5,18 @@
  *
  **/
 function calculateRentalCost(days) {
+  const midTerm = 3;
+  const longTerm = 7;
   const rentCost = 40;
+  const midDiscount = 20;
+  const longDiscount = 50;
 
-  if (days >= 7) {
-    return days * rentCost - 50;
-  } else if (days > 2) {
-    return days * rentCost - 20;
+  if (days >= longTerm) {
+    return days * rentCost - longDiscount;
+  }
+
+  if (days >= midTerm) {
+    return days * rentCost - midDiscount;
   }
 
   return days * rentCost;
